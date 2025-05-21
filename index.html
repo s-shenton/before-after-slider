@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before After Slider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="image-comparison" data-component="image-comparison-slider">
+    <div class="image-comparison__wrapper">
+        <img src="images/image2.jpg" alt="After" class="image-comparison__image">
+        <div class="image-comparison__overlay">
+            <img src="images/image1.jpg" alt="Before" class="image-comparison__image image-comparison__image--before">
+            <div class="image-comparison__label image-comparison__label--before">Before</div>
+        </div>
+        <div class="image-comparison__after-label-container">
+            <div class="image-comparison__label image-comparison__label--after">After</div>
+        </div>
+        <div class="image-comparison__slider">
+            <div class="image-comparison__slider-line"></div>
+            <div class="image-comparison__slider-button"></div>
+        </div>
+        <input type="range" class="image-comparison__range" min="0" max="100" value="50" aria-label="Percentage of before image visible">
+    </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
