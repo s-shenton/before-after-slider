@@ -7,22 +7,35 @@
 </head>
 <body>
 <div class="image-comparison" data-component="image-comparison-slider">
-    <div class="image-comparison__wrapper">
-        <img src="images/image2.jpg" alt="After" class="image-comparison__image">
-        <div class="image-comparison__overlay">
-            <img src="images/image1.jpg" alt="Before" class="image-comparison__image image-comparison__image--before">
-            <div class="image-comparison__label image-comparison__label--before">Before</div>
-        </div>
-        <div class="image-comparison__after-label-container">
-            <div class="image-comparison__label image-comparison__label--after">After</div>
-        </div>
-        <div class="image-comparison__slider">
-            <div class="image-comparison__slider-line"></div>
-            <div class="image-comparison__slider-button"></div>
-        </div>
-        <input type="range" class="image-comparison__range" min="0" max="100" value="50" aria-label="Percentage of before image visible">
+  <div class="image-comparison__wrapper">
+    <img src="images/image2.jpg" alt="After" class="image-comparison__image">
+    <!-- Before overlay -->
+    <div class="image-comparison__overlay">
+      <img src="images/image1.jpg" alt="Before" class="image-comparison__image image-comparison__image--before">
+      <div class="image-comparison__label image-comparison__label--before1">
+        <h1>Vague prompt:</h1>
+      </div>
+      <div class="image-comparison__label image-comparison__label--before2">
+        <p>Create a travel itinerary for my family for a 3-day trip to Tokyo.</p>
+      </div>
     </div>
+    <!-- After overlay -->
+    <div class="image-comparison__after-label-container">
+      <div class="image-comparison__label image-comparison__label--after1">
+        <h1>Great prompt:</h1>
+      </div>
+      <div class="image-comparison__label image-comparison__label--after2">
+        <p>As professional travel planner. Create a 3-day itinerary for a family of four (two adults and two children aged 8 and 12) visiting Tokyo for the first time in October. Include a mix of iconic landmarks, family-friendly activities, and suggested restaurants. Factor in travel times between locations and provide estimated costs for all activities. The pace must be manageable for children and include at least one indoor backup activity per day in case of bad weather. Consider that we're staying in a hotel near Shinjuku Station and have a budget of $250 per day for activities and meals.</p>
+      </div>
+    </div>
+    <!-- Slider -->
+    <div class="image-comparison__slider">
+      <div class="image-comparison__slider-line"></div>
+      <div class="image-comparison__slider-button"></div>
+    </div>
+    <input type="range" class="image-comparison__range" min="0" max="100" value="50" aria-label="Percentage of before image visible">
+  </div>
 </div>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
